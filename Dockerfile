@@ -38,9 +38,9 @@ ENV PATH $ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
 
 # Update of Android SDK
 RUN echo y | android update sdk --no-ui --all --filter \
-       "android-21,android-23" \
+       "android-21,android-22,android-23" \
   && echo y | android update sdk --no-ui --all --filter \
-       "build-tools-21.1.2,build-tools-23.0.2,build-tools-23.0.3" \
+       "build-tools-21.1.2,build-tools-22.0.1,build-tools-23.0.2,build-tools-23.0.3" \
   && echo y | android update sdk --no-ui --all --filter \
        "extra-google-m2repository,extra-android-m2repository"
 
